@@ -6,10 +6,10 @@
     <div class="collapse navbar-collapse" id="collapsibleNavbar">
       <ul class="navbar-nav">
         <li class="nav-item">
-          <a class="nav-link" href="{{route('home')}}}">Home</a>
+          <a class="nav-link" href="{{route('home')}}">Home</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#">Product/Service</a>
+          <a class="nav-link" href="{{route('product')}}">Product/Service</a>
         </li>
         <li class="nav-item">
           <a class="nav-link" href="#">Our Teams</a>
