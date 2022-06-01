@@ -4,7 +4,7 @@
       <span class="navbar-toggler-icon"></span>
     </button>
     <div class="collapse navbar-collapse" id="collapsibleNavbar">
-      <ul class="navbar-nav">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
         <li class="nav-item">
           <a class="nav-link" href="{{route('home')}}">Home</a>
         </li>
@@ -12,7 +12,7 @@
           <a class="nav-link" href="{{route('product')}}">Product/Service</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#">Our Teams</a>
+          <a class="nav-link" href="{{route('teams')}}">Our Teams</a>
         </li>
         <li class="nav-item">
           <a class="nav-link" href="#">About Us</a>
