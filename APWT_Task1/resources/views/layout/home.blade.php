@@ -47,6 +47,34 @@
 
     margin-left: 5px;
 }
+@media(max-width: 600px){
+    .footer{
+        grid-template-columns: auto;
+        grid-row-gap: 20px;
+
+
+    }
+    .footer .footer-header{
+       padding: 5px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 40px;
+        align-items: center;
+
+    }
+    .footer .footer-header .header-link{
+        margin-bottom: 20px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .footer .footer-header .footer-info ,.footer .footer-header ol li {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+}
 </style>
 <body>
 
