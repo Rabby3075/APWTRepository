@@ -12,10 +12,10 @@
           <a class="nav-link" href="{{route('studentCreatePage')}}">Registration</a>
         </li>
         <li class="nav-item mx-3">
-          <a class="nav-link" href="">Login</a>
+          <a class="nav-link" href="{{route('studentLoginPage')}}">Login</a>
         </li>
         <li class="nav-item mx-3">
-          <a class="nav-link" href="">Contact Us</a>
+          <a class="nav-link" href="{{route('ContactView')}}">Contact Us</a>
         </li>
       </ul>
     </div>

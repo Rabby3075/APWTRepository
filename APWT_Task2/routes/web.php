@@ -1,6 +1,7 @@
 <?php
 use App\Http\Controllers\homeController;
 use App\Http\Controllers\StudentController;
+use App\Http\Controllers\contactUsController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -17,3 +18,6 @@ use Illuminate\Support\Facades\Route;
 Route::get('/',[homeController::class, 'homePage'])->name('home');
 Route::get('/registration',[StudentController::class, 'studentCreate'])->name('studentCreatePage');
 Route::post('/studentCreate',[StudentController::class, 'studentCreateSubmitted'])->name('studentCreate');
+Route::get('/login',[StudentController::class, 'studentLogin'])->name('studentLoginPage');
+Route::post('/loginSubmit',[StudentController::class, 'studentLoginSubmitted'])->name('studentLogin');
+Route::get('/contactUs',[contactUsController::class, 'ContactView'])->name('ContactView');
