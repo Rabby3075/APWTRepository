@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use App\Models\ride;
 use App\Http\Requests\StorerideRequest;
 use App\Http\Requests\UpdaterideRequest;
+use Illuminate\Http\Request;
 
 class RideController extends Controller
 {
@@ -91,5 +92,21 @@ class RideController extends Controller
     public function APIList(){
         $req = "Ride complete";
         return ride::where('riderId',1)->where('customerStatus',$req)->where('riderStatus',$req)->get();
+    }
+    public function APIPost(Request $req){
+       $ride = new ride();
+        $ride->customerId  = $req->cid;
+        $ride->customerName = $req->cname;
+        $ride->customerPhone = $req->cphone;
+        $ride->pickupPoint = $req->ppoint;
+        $ride->destination = $req->destination;
+        $ride->length = $req->distance;
+        $ride->cost = $req->cost;
+        $ride->customerStatus = $req->cstatus;
+        $ride->rideRequestTime = $req->rrtime;
+       
+        $ride->save();
+
+        return $req;
     }
 }
